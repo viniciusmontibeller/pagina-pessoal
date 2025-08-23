@@ -6,8 +6,20 @@
     color: inherit;
 }
 
+body {
+    background-color: #fbf8f4;
+    color: #1a120a;
+    /* background-color: #0b0804; */
+    /* color: #f5ede5; */
+    /* light bg color: #fbf8f4; */
+    /* light text color: #1a120a; */
+    /* primary: #bb8344; */
+    /* secondary: #22525e; */
+    /* accent: #3c318c; */
+}
+
 header {
-    background-color: darkgray;
+    border-bottom: 2px solid #1a120a;
 }
 
 .menu {
@@ -21,7 +33,7 @@ header {
 
 .menu li  {
     text-transform: uppercase;
-    color: blueviolet;
+
     font-weight: 700;
 }
 
