@@ -6,50 +6,347 @@
     color: inherit;
 }
 
-body {
-    background-color: #fbf8f4;
-    color: #1a120a;
-    /* background-color: #0b0804; */
-    /* color: #f5ede5; */
-    /* light bg color: #fbf8f4; */
-    /* light text color: #1a120a; */
-    /* primary: #bb8344; */
-    /* secondary: #22525e; */
-    /* accent: #3c318c; */
+html { 
+    scroll-behavior: smooth; 
 }
 
-header {
-    border-bottom: 2px solid #1a120a;
+@media (prefers-reduced-motion: reduce) {
+    html { 
+        scroll-behavior: auto; 
+    }
+}
+
+main { 
+    scroll-snap-type: none;
+}
+
+body {
+    background-color: #0b0804;
+    color: #f5ede5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* #3c1361*/
+    /* #bca0dc*/
+    /* #c3d48b*/
+    /* #bbd2ec*/
 }
 
 .menu {
-    padding: 2rem;
+    padding: 1rem;
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 2px solid #bca0dc;
+    background-color: #0b0804;
 }
 
-.menu li  {
+.menu li{
     text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.7rem;
+    width: min-content;
+}
 
-    font-weight: 700;
+.menu li a{
+    transition: .3s ease-in-out;
+}
+
+.menu li a:hover {
+    color: #bca0dc;
+}
+
+.container-principal {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 5rem;
+}
+
+.container-principal aside{
+    flex: 1 0 25%;
+    margin-top: 2rem;
+}
+
+.perfil{
+    text-align: center;
+    margin-bottom: 4rem;
 }
 
 .foto_perfil {
-    max-height: 5rem;
-    border-radius: 20%;
+    flex: 1 0 25%;
+    max-height: 15rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    filter: drop-shadow(0px 0px 5px #bca0dc);
 }
 
-.status {
-    font-size: 12px;
+.perfil h3{
+    margin-bottom: 1rem;
 }
 
-.finalizado {
-    color: green
+.container-principal aside p{
+    margin-bottom: 1.5rem;
 }
 
-.cursando {
-    color: lightblue;
+.container-principal aside ul{
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.container-principal aside ul li{
+    padding: 0.3rem 0.8rem;
+    border-radius: 5px;
+}
+
+.container-principal .techs li{
+    background-color: #3c1361;
+}
+
+.container-principal .interesses-pessoais li{
+    background-color: #bca0dc;
+    color: #0b0804;
+}
+
+.container-principal aside a{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: #bca0dc;
+    text-underline-offset: .15em;
+    text-decoration-thickness: .08em;
+}
+
+.container-principal aside a:hover{
+    text-decoration: underline;
+}
+
+.container-principal aside a img{
+    height: 1rem;
+    margin: auto;
+}
+
+section {
+    margin-block: 5rem;
+    scroll-margin-top: 6rem;
+}
+
+section h2{
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+#disciplinas p {
+    margin-bottom: 0.5rem;
+}
+
+#disciplinas ul {
+    display: grid;
+    gap: 0.5rem;
+}
+
+#disciplinas ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+}
+
+#disciplinas .status{
+    align-self: center;
+    border-radius: 5px;
+    color: #0b0804;
+    padding: 0.2rem;
+}
+
+#disciplinas .status.concluido{
+    background-color: #c3d48b;
+}
+
+#disciplinas .status.cursando{
+    background-color: #bbd2ec;
+}
+
+#disciplinas ul li:has(.concluido):hover{
+    background-color: #c3d48b;
+    color: #0b0804;
+    border-color: #c3d48b;
+}
+
+#disciplinas ul li:has(.cursando):hover{
+    background-color: #bbd2ec;
+    color: #0b0804;
+    border-color: #bbd2ec;
+}
+
+#projetos p{
+    margin-bottom: 4rem;
+}
+
+.lista-projetos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card-projeto{
+    max-width: 18rem;
+    width: 100%;
+    max-height: 22rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #bca0dc;
+}
+
+.card-projeto:hover{
+    scale: 1.05;
+}
+
+.card-projeto .imagem-container{
+    overflow: hidden;
+    flex: 0 1 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-projeto img{
+    height: 100%;
+    display: block;
+    border-radius: inherit;
+}
+
+.card-projeto .descricao-projeto{
+    flex: 0 1 40%;
+    padding: 1rem;
+    background-color: #3c1361;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-projeto .descricao-projeto a{
+    align-self: flex-end;
+    color: #bca0dc;
+    border-radius: 5px;
+    padding: 0.2rem 0.4rem;
+    transition: .3s ease-in-out;
+}
+
+.card-projeto .descricao-projeto a:hover{
+    background-color: #bca0dc;
+    color: #0b0804;
+}
+
+.dict-titulo{
+    margin-bottom: 2rem;
+}
+
+.dict-lista{
+    border-radius: 5px;
+    overflow: hidden;
+    margin-inline: auto;
+}
+
+.dict-linha{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+
+.dict-linha dt, .dict-linha dd{
+    padding: 1rem;
+}
+
+.dict-linha dd {
+    border-left: 2px solid #0b0804;
+}
+
+.dict-linha:nth-child(odd){
+    background-color: #3c1361;
+}
+
+.dict-linha:nth-child(even){
+    background-color: #2e0e4a;
+}
+
+footer address{
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    border-top: 2px solid #bca0dc;
+    gap: 2rem;
+    align-items: center;
+}
+
+footer address a{
+    border-bottom: 1px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+
+footer address a:hover{
+    border-color: #bca0dc;
+}
+
+footer address a img{
+    height: 1rem;
+}
+
+@media screen and (min-width: 500px) {
+    .menu{
+        padding: 2rem;
+    }
+
+    .menu li{
+        font-weight: 700;
+        width: max-content;
+    }
+}
+
+@media screen and (min-width: 700px){
+    .container-principal{
+        display: flex;
+    }
+
+    .menu li{
+        font-size: 1rem
+    }
+
+    .container-principal aside{
+        margin-top: 5rem;
+    }
+
+    section h2{
+        font-size: 2rem;
+    }
+
+    #sobre p {
+        font-size: 1.3rem;
+    }
+
+    #interesses p {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    #disciplinas ul{
+        grid-template-columns: 1fr 1fr;
+    }
 }
