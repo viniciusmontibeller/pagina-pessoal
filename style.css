@@ -1,3 +1,13 @@
+:root{
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --cor-escura: #0b0804;
+    --cor-clara: #f5ede5;
+    --cor-concluido: #c3d48b;
+    --cor-cursando: #bbd2ec;
+    --cor-primaria: #3c1361;
+    --cor-primaria-clara: #bca0dc;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -21,13 +31,9 @@ main {
 }
 
 body {
-    background-color: #0b0804;
-    color: #f5ede5;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* #3c1361*/
-    /* #bca0dc*/
-    /* #c3d48b*/
-    /* #bbd2ec*/
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    font-family: var(--font-family);
 }
 
 .menu {
@@ -39,8 +45,8 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 0.5rem;
-    border-bottom: 2px solid #bca0dc;
-    background-color: #0b0804;
+    border-bottom: 2px solid var(--cor-primaria-clara);
+    background-color: var(--cor-escura);
 }
 
 .menu li{
@@ -55,7 +61,7 @@ body {
 }
 
 .menu li a:hover {
-    color: #bca0dc;
+    color: var(--cor-primaria-clara);
 }
 
 .container-principal {
@@ -82,7 +88,7 @@ body {
     max-height: 15rem;
     border-radius: 10px;
     margin-bottom: 2rem;
-    filter: drop-shadow(0px 0px 5px #bca0dc);
+    filter: drop-shadow(0px 0px 5px var(--cor-primaria-clara));
 }
 
 .perfil h3{
@@ -106,19 +112,19 @@ body {
 }
 
 .container-principal .techs li{
-    background-color: #3c1361;
+    background-color: var(--cor-primaria);
 }
 
 .container-principal .interesses-pessoais li{
-    background-color: #bca0dc;
-    color: #0b0804;
+    background-color: var(--cor-primaria-clara);
+    color: var(--cor-escura);
 }
 
 .container-principal aside a{
     display: inline-flex;
     align-items: center;
     gap: 0.3rem;
-    color: #bca0dc;
+    color: var(--cor-primaria-clara);
     text-underline-offset: .15em;
     text-decoration-thickness: .08em;
 }
@@ -165,28 +171,28 @@ section h2{
 #disciplinas .status{
     align-self: center;
     border-radius: 5px;
-    color: #0b0804;
+    color: var(--cor-escura);
     padding: 0.2rem;
 }
 
 #disciplinas .status.concluido{
-    background-color: #c3d48b;
+    background-color: var(--cor-concluido);
 }
 
 #disciplinas .status.cursando{
-    background-color: #bbd2ec;
+    background-color: var(--cor-cursando);
 }
 
 #disciplinas ul li:has(.concluido):hover{
-    background-color: #c3d48b;
+    background-color: var(--cor-concluido);
     color: #0b0804;
-    border-color: #c3d48b;
+    border-color: var(--cor-concluido);
 }
 
 #disciplinas ul li:has(.cursando):hover{
-    background-color: #bbd2ec;
+    background-color: var(--cor-cursando);
     color: #0b0804;
-    border-color: #bbd2ec;
+    border-color: var(--cor-cursando);
 }
 
 #projetos p{
@@ -209,7 +215,7 @@ section h2{
     overflow: hidden;
     transition: 0.3s ease-in-out;
     border-radius: 10px;
-    box-shadow: 0px 0px 5px #bca0dc;
+    box-shadow: 0px 0px 5px var(--cor-primaria-clara);
 }
 
 .card-projeto:hover{
@@ -233,7 +239,7 @@ section h2{
 .card-projeto .descricao-projeto{
     flex: 0 1 40%;
     padding: 1rem;
-    background-color: #3c1361;
+    background-color: var(--cor-primaria);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -241,15 +247,15 @@ section h2{
 
 .card-projeto .descricao-projeto a{
     align-self: flex-end;
-    color: #bca0dc;
+    color: var(--cor-primaria-clara);
     border-radius: 5px;
     padding: 0.2rem 0.4rem;
     transition: .3s ease-in-out;
 }
 
 .card-projeto .descricao-projeto a:hover{
-    background-color: #bca0dc;
-    color: #0b0804;
+    background-color: var(--cor-primaria-clara);
+    color: var(--cor-escura);
 }
 
 .dict-titulo{
@@ -276,11 +282,11 @@ section h2{
 }
 
 .dict-linha:nth-child(odd){
-    background-color: #3c1361;
+    background-color: var(--cor-primaria);
 }
 
 .dict-linha:nth-child(even){
-    background-color: #2e0e4a;
+    background-color: var(--cor-primaria);
 }
 
 footer address{
@@ -290,7 +296,7 @@ footer address{
     display: flex;
     justify-content: space-between;
     padding: 2rem;
-    border-top: 2px solid #bca0dc;
+    border-top: 2px solid var(--cor-primaria-clara);
     gap: 2rem;
     align-items: center;
 }
@@ -301,7 +307,7 @@ footer address a{
 }
 
 footer address a:hover{
-    border-color: #bca0dc;
+    border-color: var(--cor-primaria-clara);
 }
 
 footer address a img{
