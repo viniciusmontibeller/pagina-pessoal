@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/academic_icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Portifolio</title>
 </head>
@@ -15,18 +15,21 @@
             <ul class="menu">
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#interesses">Interesses</a></li>
-                <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#disciplinas">Disciplinas Cursadas</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="/html_dict.html">HTML docs</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <div class="container-principal">
         <aside>
-            <img class="foto_perfil" src="foto_perfil.png" alt="Foto de perfil">
-            <h3>Vinicius da Silva Montibeller</h3>
-            <a href="https://sin.ufsc.br/" target="_blank">Sistemas da Informação</a>
+            <div class="perfil">
+                <img class="foto_perfil" src="/images/foto_perfil.jpeg" alt="Foto de perfil">
+                <h3>Vinicius da Silva Montibeller</h3>
+                <a href="https://sin.ufsc.br/" target="_blank" rel="noopener noreferrer">Sistemas de Informação</a>
+            </div>
             <p>Linguagens e Techs conhecidas</p>
-            <ul>
+            <ul class="techs">
                 <li>Pyhton</li>
                 <li>HTML</li>
                 <li>CSS</li>
@@ -36,97 +39,152 @@
                 <li>SQL</li>
                 <li>SASS</li>
             </ul>
-            <a href="https://github.com/viniciusmontibeller">Github</a>
-        </aside>
-        <section id="sobre">
-            <h2>Sobre</h2>
-            <p>Minha jornada na tecnologia começou de forma inesperada: da engenharia eletrônica à descoberta da
-                programação em uma live gratuita. Desde então, mergulhei em estudos autodidatas, projetos pessoais e
-                experiências voluntárias, desenvolvendo autonomia, resiliência e paixão por aprender continuamente.
-
-                Hoje sou desenvolvedor e estudante de Sistemas de Informação na UFSC, focado em tecnologias web e
-                sistemas de informação. Meu objetivo é criar soluções que gerem impacto real no dia a dia das pessoas e
-                nos processos das empresas.</p>
-        </section>
-        <section id="interesses">
-            <h2>Interesses</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur atque provident veniam maxime itaque
-                earum quisquam labore perspiciatis veritatis, esse, quod voluptatem doloremque sed necessitatibus aut,
-                eius reiciendis? Nam, dolorem.</p>
-        </section>
-        <section id="#disciplinas">
-            <h2>Disciplinas Cursadas</h2>
-            <p>Status das disciplinas cursadas</p>
-            <ul>
-                <li>
-                    <p>Introdução à Programação Orientada a Objetos</p>
-                    <span class="status finalizado">Finalizado</span>
-                </li>
-                <li>
-                    <p>Introdução à Informática</p>
-                    <span class="status finalizado">Finalizado</span>
-                </li>
-                <li>
-                    <p>Fundamentos Matemáticos da Informática</p>
-                    <span class="status finalizado">Finalizado</span>
-                </li>
-                <li>
-                    <p>Teoria Geral de Sistemas</p>
-                    <span class="status finalizado">Finalizado</span>
-                </li>
-                <li>
-                    <p>Aspectos Comportamentais do Empreendedor</p>
-                    <span class="status finalizado">Finalizado</span>
-                </li>
-                    <p>Organização e Arquitetura de Computadores</p>
-                    <span class="status finalizado">Finalizado</span>
-                </li>
-                </li>
-                    <p>Probabilidade e Estatística</p>
-                    <span class="status finalizado">Finalizado</span>
-                </li>
-                </li>
-                    <p>Desenvolvimento de Sistemas Orientados a Objetos |</p>
-                    <span class="status finalizado">Finalizado</span>
-                </li>
-                    <p>Marketing Pessoal e Empreendedorismo</p>
-                    <span class="status finalizado">Finalizado</span>
-                </li>
-                </li>
-                    <p>Administração |</p>
-                    <span class="status finalizado">Finalizado</span>
-                </li>
-                </li>
-                    <p>Técnicas Estatísticas de Predição</p>
-                    <span class="status cursando">Cursando</span>
-                </li>
-                </li>
-                    <p>Programação WEB</p>
-                    <span class="status cursando">Cursando</span>
-                </li>
-                </li>
-                    <p>Estrutura de Dados</p>
-                    <span class="status cursando">Cursando</span>
-                </li>
-                </li>
-                    <p>Programação Econômica e Financeira</p>
-                    <span class="status cursando">Cursando</span>
-                </li>
-                </li>
-                    <p>Geração de Idéias e Criatividade em Informática</p>
-                    <span class="status cursando">Cursando</span>
-                </li>
+            <p>Interesses pessoais</p>
+            <ul class="interesses-pessoais">
+                <li>Café</li>
+                <li>Livros</li>
+                <li>RPG de mesa</li>
+                <li>Jogos de Tabuleiro</li>
+                <li>Jogos eletronicos</li>
+                <li>Gatos</li>
+                <li>Tecnologia</li>
+                <li>Astronomia</li>
             </ul>
-        </section>
-        <section id="projetos">
-            <h2>Projetos Pessoais</h2>
-            <p>Esses são alguns do projetos que já realizei</p>
-        </section>
-    </main>
+            <a href="https://github.com/viniciusmontibeller" target="_blank" rel="noopener noreferrer">
+                <img src="/github.svg" alt="Icone github" aria-label="Icone Github">
+                Github
+            </a>
+        </aside>
+        <main>
+            <section id="sobre">
+                <h2>Sobre</h2>
+                <p>Minha jornada na tecnologia começou de forma inesperada: da engenharia eletrônica à descoberta da
+                    programação em uma live gratuita. Desde então, mergulhei em estudos autodidatas, projetos pessoais e
+                    experiências voluntárias, desenvolvendo autonomia, resiliência e paixão por aprender continuamente.
+                <br/>
+                <br/>
+                    Hoje sou desenvolvedor e estudante de Sistemas de Informação na UFSC, focado em tecnologias web e
+                    análise de dados. Meu objetivo é criar soluções que gerem impacto real no dia a dia das pessoas e
+                    nos processos das empresas.</p>
+            </section>
+            <section id="interesses">
+                <h2>Interesses</h2>
+                <p>
+                    Meus interesses atuais concentram-se em Engenharia de Software, Desenvolvimento Web e Análise de Dados, com abertura para evoluir e se ampliar conforme avanço na graduação e na experiência profissional.
+                    <br/>
+                    <br/>
+                    Busco desenvolver habilidades em performance e segurança, além de automação e aprofundamento em análise de dados e modelagem preditiva para apoiar tomadas de decisão mais assertivas.
+                </p>
+            </section>
+            <section id="disciplinas">
+                <h2>Disciplinas Cursadas</h2>
+                <ul>
+                    <li>
+                        <p>Introdução à Programação Orientada a Objetos</p>
+                        <p class="status concluido">Concluido</p>
+                    </li>
+                    <li>
+                        <p>Introdução à Informática</p>
+                        <p class="status concluido">Concluido</p>
+                    </li>
+                    <li>
+                        <p>Fundamentos Matemáticos da Informática</p>
+                        <p class="status concluido">Concluido</p>
+                    </li>
+                    <li>
+                        <p>Teoria Geral de Sistemas</p>
+                        <p class="status concluido">Concluido</p>
+                    </li>
+                    <li>
+                        <p>Aspectos Comportamentais do Empreendedor</p>
+                        <p class="status concluido">Concluido</p>
+                    </li>
+                    <li>
+                        <p>Organização e Arquitetura de Computadores</p>
+                        <p class="status concluido">Concluido</p>
+                    </li>
+                    <li>
+                        <p>Probabilidade e Estatística</p>
+                        <p class="status concluido">Concluido</p>
+                    </li>
+                    <li>
+                        <p>Desenvolvimento de Sistemas Orientados a Objetos 1</p>
+                        <p class="status concluido">Concluido</p>
+                    </li>
+                    <li>
+                        <p>Marketing Pessoal e Empreendedorismo</p>
+                        <p class="status concluido">Concluido</p>
+                    </li>
+                    <li>
+                        <p>Administração 1</p>
+                        <p class="status concluido">Concluido</p>
+                    </li>
+                    <li>
+                        <p>Técnicas Estatísticas de Predição</p>
+                        <p class="status cursando">Cursando</p>
+                    </li>
+                    <li>
+                        <p>Programação WEB</p>
+                        <p class="status cursando">Cursando</p>
+                    </li>
+                    <li>
+                        <p>Estrutura de Dados</p>
+                        <p class="status cursando">Cursando</p>
+                    </li>
+                    <li>
+                        <p>Programação Econômica e Financeira</p>
+                        <p class="status cursando">Cursando</p>
+                    </li>
+                    <li>
+                        <p>Geração de Idéias e Criatividade em Informática</p>
+                        <p class="status cursando">Cursando</p>
+                    </li>
+                </ul>
+            </section>
+            <section id="projetos">
+                <h2>Projetos Pessoais</h2>
+                <p>Esses são alguns do projetos que já realizei.</p>
+                <ul class="lista-projetos">
+                    <li class="card-projeto">
+                        <div class="imagem-container">
+                            <img class="imagem-projeto" src="/images/projeto_portfolio.png" alt="Imagem protfolio">
+                        </div>
+                        <div class="descricao-projeto">
+                            <p>Projeto criado com o objetivo de praticar TypeScript e React e também mostrar meus projetos.</p>
+                            <a href="https://portfolio-vinicius-montibeller.vercel.app/" target="_blank" rel="noopener noreferrer">Visitar Site</a>
+                        </div>
+                    </li>
+                    <li class="card-projeto">
+                        <div class="imagem-container">
+                            <img class="imagem-projeto" src="/images/projeto_pokedex.png" alt="Imagem do site da Pokedex">
+                        </div>
+                        <div class="descricao-projeto">
+                            <p>Projeto realizado no final de curso online utilizando React, Styled-Components e Jest.</p>
+                            <a href="https://pokedex-henna-pi.vercel.app/" target="_blank" rel="noopener noreferrer">Visitar Site</a>
+                        </div>
+                    </li>
+                    <li class="card-projeto">
+                        <div class="imagem-container">
+                            <img class="imagem-projeto" src="/images/projeto_cartao.png" alt="Imagem do site do cartão">
+                        </div>
+                        <div class="descricao-projeto">
+                            <p>Solução de um desafio online para criar um formulario de carto interativo.</p>
+                            <a href="https://interactive-card-details-form-liard-nine.vercel.app/" target="_blank" rel="noopener noreferrer">Visitar Site</a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
     <footer>
         <address>
+            <p>© Vinicius Montibeller. Alguns direitos reservados.</p>
             <ul>
-                <li>LinkedIn</li>
+                <li>
+                    <a href="https://www.linkedin.com/in/vinicius-montibeller/" target="_blank" rel="noopener noreferrer">
+                        <img src="/linkedin.svg" alt="Icone LinkedIn" aria-label="Icone LinkedIn">
+                    </a>
+                </li>
             </ul>
         </address>
     </footer>
