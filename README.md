@@ -13,9 +13,9 @@
 
 ## 🛠️ Tecnologias
 
-HTML5 semântico
+* HTML5 semântico
 
-CSS3 (Flexbox/Grid)
+* CSS3 (Flexbox/Grid)
 
 ### 🌐 Live
 
