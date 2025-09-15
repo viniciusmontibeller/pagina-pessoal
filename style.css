@@ -129,6 +129,10 @@ body {
     text-decoration-thickness: .08em;
 }
 
+.container-principal aside a:visited{
+    color: #a05adf;
+}
+
 .container-principal aside a:hover{
     text-decoration: underline;
 }
@@ -218,7 +222,7 @@ section h2{
     box-shadow: 0px 0px 5px var(--cor-primaria-clara);
 }
 
-.card-projeto:hover{
+.card-projeto:hover, .card-projeto:focus{
     scale: 1.05;
 }
 
@@ -253,6 +257,10 @@ section h2{
     transition: .3s ease-in-out;
 }
 
+.card-projeto .descricao-projeto a:visited{
+    color: #a05adf;
+}   
+
 .card-projeto .descricao-projeto a:hover{
     background-color: var(--cor-primaria-clara);
     color: var(--cor-escura);
@@ -282,7 +290,7 @@ section h2{
 }
 
 .dict-linha:nth-child(odd){
-    background-color: var(--cor-primaria);
+    background-color: #501982;
 }
 
 .dict-linha:nth-child(even){
