@@ -266,6 +266,10 @@ section h2{
     color: var(--cor-escura);
 }
 
+.container-principal main:has(.dict-lista){
+    margin-block: 3rem;
+}
+
 .dict-titulo{
     margin-bottom: 2rem;
 }
